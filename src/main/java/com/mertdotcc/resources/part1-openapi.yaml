@@ -1,0 +1,18 @@
+openapi: 3.0.2
+info:
+  title: Integration
+  version: '1.0'
+servers:
+  - url: /
+paths:
+  /student:
+    post:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: string
+          description: default response description
+      operationId: addStudent
+components: {}
