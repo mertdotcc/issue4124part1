@@ -37,7 +37,6 @@ public class IntegrationBean extends RouteBuilder {
         exchange.getIn().setBody(mapper.writeValueAsString(studentWithGrades));
     }
 
-
     @Override
     public void configure() throws Exception {
 
