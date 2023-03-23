@@ -39,6 +39,6 @@ public class IntegrationBean extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-
+        this.getContext().getRegistry().bind("integrationBean", this);
     }
 }
