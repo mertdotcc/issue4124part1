@@ -1,7 +1,7 @@
 kamel run \
 --open-api file:./resources/part1-openapi.yaml \
 --resource file:./resources/sample-error-response.json \
---dependency mvn:com.mertdotcc.issue4124part2:1.5 \
+--dependency mvn:com.mertdotcc:issue4124part2:1.5 \
 --dependency mvn:org.mapstruct:mapstruct:1.5.2.Final \
 --dependency mvn:com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.2 \
 --source ./sources/IntegrationBean.java \
