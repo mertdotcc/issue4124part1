@@ -20,7 +20,7 @@ public class Integration extends RouteBuilder {
                 .log(LoggingLevel.INFO, "before-mapping", "headers: ${headers}; body: ${body}")
                 .removeHeaders("*")
                 .convertBodyTo(String.class)
-                .to("bean:IntegrationBean?method=handleMapping")
+                .bean("IntegrationBean", "handleMapping")
                 .log(LoggingLevel.INFO, "after-mapping", "headers: ${headers}; body: ${body}");
     }
 }
