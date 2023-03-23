@@ -26,4 +26,6 @@ kamel run \
 --trait health.readiness-period=15 \
 --trait health.readiness-success-threshold=1 \
 --trait health.readiness-failure-threshold=3 \
+--trait quarkus.enabled=true \
+--trait quarkus.package-type=native \
 Integration.java
